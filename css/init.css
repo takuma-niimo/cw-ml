@@ -1,0 +1,19 @@
+body {
+  font-family: YuMincho, /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
