@@ -2,7 +2,6 @@ body {
   font-family: YuMincho, /* Mac用 */
 	'Yu Mincho', /* Windows用 */
 	serif;
-  color: #707070;
 }
 
 ul {
@@ -15,25 +14,6 @@ a {
   color: inherit;
 }
 
-p {
-}
-
 a:hover {
   text-decoration: none;
-}
-
-article>* {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.padding15 {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.max1000 {
-  max-width: 1000;
-  margin-left: auto;
-  margin-right: auto;
 }
