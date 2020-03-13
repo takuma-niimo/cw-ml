@@ -157,3 +157,7 @@ line up
 .lineup .item.lunch .visual .d-md-none {
   width: 100vw;
 }
+
+.lineup .item.lunch button {
+  background-color: white;
+}
