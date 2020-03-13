@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156568860-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156568860-1');
+</script>
+</head>
+<body>
+	<article id="contact-menu_page">
+		<div class="container pc">
+			<section class="contact-main-image">
+				<div class="header-btn">
+					<div class="headerbar"></div>
+					<div class="headerbar"></div>
+					<div class="headerbar"></div>
+				</div>
+				<header>
+					<div class="header-menu">
+						<div class="header-none-btn">
+							<p>×</p>
+						</div>
+						<a href="index.html"><img src="../image/soraka-img.png" alt=""></a>
+						<ul>
+							<li class="soraka">sorakaのこと</li>
+							<li><a href="product.html" class="header-product">商品紹介</a></li>
+							<li>洋生菓子</li>
+							<li>焼生菓子</li>
+							<li>パン</li>
+							<li>その他</li>
+							<li><a href="lunch-menu.html" class="font-large">ランチメニュー</a></li>
+							<li><a href="about.html" class="font-large">会社情報</a></li>
+							<li><a href="contact.html" class="font-large">お問い合わせ</a></li>
+						</ul>
+					</div>
+				</header>
+			</section>
+			<section class="contact-address">
+				<div class="contact-address-box">
+					<div class="contact-address-leftbox">
+						<h3>TEL:</h3>
+					</div>
+					<div class="contact-address-rightbox">
+						<h3>FAX:</h3>
+					</div>
+				</div>
+				<p>【受付時間】平日9:00〜17:00 ※日曜・祝日、年末年始などは休みをいただいております。</p>
+			</section>
+			<section class="contact-discription">
+				<div class="contact-discription-box">
+					<div class="contents3">
+						<div class="container back-gray">
+							<div class="balloon">
+								<div class="title">
+									<h2>Mailによるお問い合わせ</h2>
+								</div>
+							</div>
+
+							<form action="php/mailform.php" method="post" id="mail_form">
+								<dl>
+									<!-- 必須項目はddにclass="required"をつける -->
+									<div class="contact-box">
+										<dt>お名前<span class="must">必須</span></dt>
+										<dd class="required"><input type="text" id="name_1" name="name_1" value="" class="half-input"/> <input type="text" id="name_2" name="name_2" value="" class="half-input"/></dd>
+									</div>
+
+									<div class="contact-box">
+										<dt>ふりがな<span class="must">必須</span></dt>
+										<dd class="required"><input type="text" id="read_1" name="read_1" value="" class="half-input"/> <input type="text" id="read_2" name="read_2" value="" class="half-input"/></dd>
+									</div>
+
+									<div class="contact-box">
+										<dt>メールアドレス<span class="must">必須</span></dt>
+										<dd class="required"><input type="email" id="mail_address" name="mail_address" value="" class="full-input"/></dd>
+									</div>
+
+									<div class="contact-box">
+										<dt>メールアドレス<br />(確認用)</dt>
+										<dd><input type="email" id="mail_address_confirm" name="mail_address_confirm" value=""  class="full-input"/></dd>
+									</div>
+
+									<div class="contact-box">
+										<dt>タイトル</dt>
+										<dd><input type="text" id="mail_title" name="title" value=""  class="full-input"/></dd>
+									</div>
+
+									<div class="contact-box">
+										<dt>お問い合わせの内容</dt>
+										<dd><textarea id="mail_contents" name="mail_contents" cols="40" rows="5"></textarea></dd>
+									</div>
+								</dl>
+								<p id="form_submit"><input type="button" id="form_submit_button" value="送信" /></p>
+							</form>
+						</div><!-- container -->
+					</div><!-- contents10 -->
+				</div>
+			</section>
+			<section class="contact-form">
+
+			</section>
+		</div>
+
+		<div class="container sp">
+			<section class="contact-main-image">
+				<div class="header-btn">
+					<div class="headerbar"></div>
+					<div class="headerbar"></div>
+					<div class="headerbar"></div>
+				</div>
+				<header>
+					<div class="header-menu">
+						<div class="header-none-btn">
+							<p>×</p>
+						</div>
+						<a href="../index.html"><img src="../image/soraka-img.png" alt=""></a>
+						<ul>
+							<li class="soraka">sorakaのこと</li>
+							<li><a href="../product/index.html" class="header-product">商品紹介</a></li>
+							<li>洋生菓子</li>
+							<li>焼生菓子</li>
+							<li>パン</li>
+							<li>その他</li>
+							<li><a href="../lunch-menu/index.html" class="font-large">ランチメニュー</a></li>
+							<li><a href="../about/index.html" class="font-large">会社情報</a></li>
+							<li><a href="../contact/index.html" class="font-large">お問い合わせ</a></li>
+						</ul>
+					</div>
+				</header>
+			</section>
+			<section class="contact-address">
+				<div class="sp_contact-address-box">
+					<div class="contact-address-leftbox">
+						<h3>TEL:</h3>
+					</div>
+					<div class="contact-address-rightbox">
+						<h3>FAX:</h3>
+					</div>
+				</div>
+				<p>【受付時間】平日9:00〜17:00 ※日曜・祝日、年末年始などは休みをいただいております。</p>
+			</section>
+			<section class="contact-discription">
+				<div class="contact-discription-box">
+					<div class="contents3">
+						<div class="container back-gray">
+							<div class="balloon">
+								<div class="title">
+									<h2>Mailによるお問い合わせ</h2>
+								</div>
+							</div>
+
+							<form action="php/mailform.php" method="post" id="sp_mail_form">
+								<dl>
+									<!-- 必須項目はddにclass="required"をつける -->
+									<div class="sp_contact-box">
+										<dt>お名前<span class="must">必須</span></dt>
+										<dd class="required"><input type="text" id="name_1" name="name_1" value="" class="half-input"/> <input type="text" id="name_2" name="name_2" value="" class="half-input"/></dd>
+									</div>
+
+									<div class="sp_contact-box">
+										<dt>ふりがな<span class="must">必須</span></dt>
+										<dd class="required"><input type="text" id="read_1" name="read_1" value="" class="half-input"/> <input type="text" id="read_2" name="read_2" value="" class="half-input"/></dd>
+									</div>
+
+									<div class="sp_contact-box">
+										<dt>メールアドレス<span class="must">必須</span></dt>
+										<dd class="required"><input type="email" id="mail_address" name="mail_address" value="" class="full-input"/></dd>
+									</div>
+
+									<div class="sp_contact-box">
+										<dt>メールアドレス<br />(確認用)</dt>
+										<dd><input type="email" id="mail_address_confirm" name="mail_address_confirm" value=""  class="full-input"/></dd>
+									</div>
+
+									<div class="sp_contact-box">
+										<dt>タイトル</dt>
+										<dd><input type="text" id="mail_title" name="title" value=""  class="full-input"/></dd>
+									</div>
+
+									<div class="sp_contact-box">
+										<dt>お問い合わせの内容</dt>
+										<dd><textarea id="mail_contents" name="mail_contents" cols="40" rows="5"></textarea></dd>
+									</div>
+								</dl>
+								<p id="form_submit"><input type="button" id="form_submit_button" value="送信" /></p>
+							</form>
+						</div><!-- container -->
+					</div><!-- contents10 -->
+				</div>
+			</section>
+			<section class="contact-form">
+
+			</section>
+		</div>
+		<footer>
+			<p>©︎ Patisserie Soraka All rights reserved.</p>
+		</footer>
+	</article>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+      <!-- script.jsを読み込む -->
+
+	<script src="js/mailform-js.php"></script>
+
+	<!-- フリガナ自動入力ライブラリここから -->
+	<script src="js/jquery.autoKana.js"></script>
+	<script>
+		(function ($) {
+			$.fn.autoKana('#name_1', '#read_1', {
+			katakana: false
+			});
+			$.fn.autoKana('#name_2', '#read_2', {
+			katakana: false
+			});
+		})(jQuery);
+	</script>
+	<script>
+		$('.header-btn').click(function() {
+			$('.header-btn').css("display", "none");
+			$('header').css("display", "block");
+			$('.header-menu').animate({right: 0});
+		});
+
+		$('.header-none-btn').click(function() {
+			$('.header-btn').css("display", "block");
+			$('header').fadeOut();
+			$('.header-menu').animate({right: "-100%"});
+		});
+	</script>
+	<!-- フリガナ自動入力ライブラリここまで -->
+
+</body>
+</html>

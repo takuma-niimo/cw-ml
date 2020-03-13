@@ -2,7 +2,7 @@ body {
   font-family: YuMincho, /* Mac用 */
 	'Yu Mincho', /* Windows用 */
 	serif;
-  color: #707070;
+  color: #444444;
 }
 
 ul {
@@ -36,4 +36,25 @@ article>* {
   max-width: 1000;
   margin-left: auto;
   margin-right: auto;
+}
+
+.img-header {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 0;
+}
+
+img.header+.circle {
+  display: block;
+  width: 10%;
+  margin: 30px auto 0;
+}
+
+button.guide-button {
+  background-color: transparent;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  padding: 5px 30px;
+  color: #707070;
+  font-size: 14px;
 }

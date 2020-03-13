@@ -4,7 +4,7 @@ keyvisual
 header {
   width: 100%;
   height: 812px;
-  background-image: url(../image/dummy.jpg);
+  background-image: url(../image/top/keyvisual.jpg);
   background-size: cover;
   -webkit-background-size: cover;
   background-position: center center;
@@ -39,10 +39,121 @@ catch
   margin-bottom: 40px;
 }
 
-.catch button {
+/* ---------------------------
+line up
+--------------------------- */
+.lineup {
+  margin-top: 0;
+  background-color: #f7f3f0;
+}
+
+.lineup .img-header {
+  position: relative;
+  padding-top: 15px;
+  z-index: 1;
+}
+
+.lineup .item {
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 60px;
+}
+
+.lineup .item.eclair {
+  background-image: url(../image/top/forest.jpg);
+}
+
+.lineup .item.macalon {
+  background-image: url(../image/top/moon.jpg);
+}
+
+.lineup .item.bread {
+  background-image: url(../image/top/inaho.jpg);
+}
+
+.lineup .item.lunch {
+  background-image: url(../image/top/cloth.jpg);
+  padding-left: 0;  /* lunch; exceptional layout */
+  padding-right: 0; /* lunch; exceptional layout */
+}
+
+.lineup .img-header+.item {
+  margin-top: 30px;
+}
+.lineup .item .visual {
+  margin-top: calc(-30px - 18px);
+  padding: 0;
+}
+
+.lineup .text {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(255,255,255,.6);
+}
+
+.lineup .text h3 {
+  font-weight: normal;
+  line-height: 220%;
+}
+
+.lineup .text p {
+  line-height: 240%;
+}
+
+.lineup .item:nth-child(even) .text {
+  margin-left: -15px;
+  padding-left: 45px;
+}
+
+.lineup .item:nth-child(odd) .text {
+  margin-left: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.lineup .item:nth-child(odd) .text::after {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 15px;
+  top: 0;
+  bottom: 0;
+  right: -15px;
+  background-color: rgba(255,255,255,.6);
+}
+
+/* lunch; exceptional layout */
+.item.lunch img.header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item.lunch img.header+.circle {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.lineup .item.lunch .text {
   background-color: transparent;
-  border: 1px solid #707070;
-  border-radius: 10px;
-  padding: 5px 30px;
-  color: #707070;
+  padding-left: 15px;
+  margin-right: 15px;
+  margin-top: 0;
+}
+
+.lineup .item.lunch .text::after {
+  display: none;
+}
+
+.lineup .item.lunch .visual {
+  margin-top: 0;
+}
+
+.lineup .item.lunch .visual .d-md-none {
+  width: 100vw;
 }

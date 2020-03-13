@@ -1,6 +1,7 @@
 /* ---------------------------
 hamburger menu
 --------------------------- */
+#navcheck { display: none; }
 .navToggle {
   display: block;
   position: fixed;
@@ -12,7 +13,7 @@ hamburger menu
   transition: all .5s;
   cursor: pointer;
   z-index: 1032;
-  background-color: #09427c;
+  background-color: #0d427c;
 }
 
 .navToggle span {
@@ -22,7 +23,7 @@ hamburger menu
   width: 26px;
   height: 2px;
   background-color: white;
-  transition: all .5s;
+  transition: all .5s ease;
 }
 
 .navToggle span:nth-child(1) {
@@ -43,16 +44,20 @@ hamburger menu
 /* ---------------------------
 hamburger when open
 --------------------------- */
-.open .navToggle span:nth-child(1) {
+#navcheck:checked+nav .navToggle span:nth-child(1) {
   transform: translate(0, 9px) rotate(-45deg);
 }
 
-.open .navToggle span:nth-child(2) {
+#navcheck:checked+nav .navToggle span:nth-child(2) {
   opacity: 0;
 }
 
-.open .navToggle span:nth-child(3) {
+#navcheck:checked+nav .navToggle span:nth-child(3) {
   transform: translate(0, -9px) rotate(45deg);
+}
+
+#navcheck:checked+nav .navToggle {
+  background-color: #434343;
 }
 
 /* ---------------------------
@@ -109,6 +114,6 @@ drawer
 /* ---------------------------
 drawer when open
 --------------------------- */
-#navArea.open nav {
+#navcheck:checked+nav {
   right: 0;
 }
