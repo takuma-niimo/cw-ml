@@ -27,10 +27,6 @@ article>* {
   margin-bottom: 60px;
 }
 
-article>*:last-child {
-  margin-bottom: 0;
-}
-
 .padding15 {
   padding-left: 15px;
   padding-right: 15px;

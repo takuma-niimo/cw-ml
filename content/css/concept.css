@@ -1,0 +1,127 @@
+.keyvisual img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+h1.img-header {
+  margin-bottom: 0;
+}
+
+img.header+.circle {
+  margin-top: 10px;
+}
+
+.img-header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.img-header .header {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* ---------------------------
+kodawari inner
+--------------------------- */
+article .inner {
+  padding: 30px 15px;
+  margin-top: -18px;
+  background-color: #f8f8f8;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+@media (min-width: 1000px) {
+  article .inner .container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  article .inner .row {
+    position: relative;
+  }
+
+  article .inner .row .col-4 {
+    width: 280px;
+  }
+
+  article .inner .row .tamago {
+    position: absolute;
+    top: 660px;
+    right: 0;
+  }
+
+  article .inner .row .komeko {
+    position: absolute;
+    top: 400px;
+    left: 0;
+  }
+
+  article .inner .row .ina {
+    position: absolute;
+    top: 130px;
+    right: 0;
+  }
+
+  article .inner .row .tanbo,
+  article .inner .row .man {
+    position: absolute;
+    top: 130px;
+    left: 0;
+  }
+
+  article .inner .row .tori,
+  article .inner .row .br {
+    position: absolute;
+    top: 430px;
+    right: 0;
+  }
+
+}
+
+.white {
+  background-color: rgba(255,255,255,.8);
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 700px;
+}
+
+@media (min-width: 576px) {
+  .white {
+    padding-left: 55px;
+    padding-right: 55px;
+    position: sticky;
+    z-index: 2;
+  }
+}
+
+article .inner p {
+  line-height: 260%;
+}
+
+article .inner:first-child {
+  margin-top: 0;
+}
+
+/* ---------------------------
+chef
+--------------------------- */
+.chef h3 {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.chef li {
+  padding-left: 20px;
+}
