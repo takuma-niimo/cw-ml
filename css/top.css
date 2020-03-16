@@ -221,6 +221,10 @@ line up
     background-color: white;
   }
 
+  .lineup .lunch {
+    height: 385px;
+  }
+
   .lineup .lunch .row {
     position: inherit;
   }
@@ -234,9 +238,19 @@ line up
     overflow: hidden;
   }
 
+  .lineup .item.lunch .visual>div {
+    position: relative;
+  }
+
   .lineup .item.lunch .visual img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 385px;
     display: block;
     object-fit: cover;
+    object-position: top 0 right 0;
   }
 
   .lineup .item:nth-child(odd) .text {
