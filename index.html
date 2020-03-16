@@ -9,6 +9,10 @@
   <!-- bootstrap 4 css -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+
   <link rel="stylesheet" href="css/init.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/top.css">
@@ -26,7 +30,7 @@
         <img class="img-fluid" src="image/soraka-img.png" alt="">
       </div>
       <ul>
-        <li class="level1"><a href="#">sorakaのこと</a></li>
+        <li class="level1"><a href="content/concept.html">sorakaのこと</a></li>
         <li class="level1"><a href="#">商品紹介</a></li>
         <li class="level2"><a href="#">洋生菓子</a></li>
         <li class="level2"><a href="#">焼生菓子</a></li>
@@ -46,6 +50,12 @@
 </div>
 
 <header>
+  <div class="top-slider">
+    <img class="slide-image" src="image/top/keyvisual1.jpg" alt="">
+    <img class="slide-image" src="image/top/keyvisual2.jpg" alt="">
+    <img class="slide-image" src="image/top/keyvisual3.jpg" alt="">
+  </div>
+
   <h1 class="shop-logo">
     <img src="image/soraka-img.png" alt="">
   </h1>
@@ -61,7 +71,7 @@
       <div class="d-none d-md-block col-md-7"><img class="img-fluid" src="image/top/catch.png" alt=""></div>
       <div class="col-sm-12 col-md-5">
         <h2 class="img-header">
-          <img class="img-fluid header" src="image/top/header-yasashisa.png" alt="">
+          <img class="img-fluid header" src="image/top/header1.png" alt="">
           <img class="img-fluid circle" src="image/top/circle.png" alt="">
         </h2>
         <p class="shoulder">
@@ -69,7 +79,7 @@
           「私、今日がんばったね」<br>「あの人と一緒に食べたいな」<br>
           そう思うお客様の気持とともに、<br>今日も、明日も、やさしさをつないでいきます。
         </p>
-        <button class="float-right guide-button"><a href="#">こだわりへ →</a></button>
+        <button class="float-right guide-button"><a href="content/concept.html">こだわりへ →</a></button>
       </div>
       <div class="d-md-none col-sm-12">
         <div class="d-sm-none d-md-block col-md-6"><img class="img-fluid" src="image/top/catch.png" alt=""></div>
@@ -80,19 +90,22 @@
 
 <!-- line up -->
 <div class="lineup">
-  <h2 class="img-header overwrap">
-    <img src="image/top/header-lineup.png" alt="" class="img-fluid header">
+  <h2 class="img-header">
+    <img src="image/top/header2.png" alt="" class="img-fluid header">
     <img src="image/top/circle.png" alt="" class="img-fluid circle">
   </h2>
 
   <div class="item eclair padding15">
     <div class="container max1000">
       <div class="row">
+        <div class="pc-bg d-none d-md-block">
+          <img class="img-fluid" src="image/top/eclair-bg.jpg" alt="">
+        </div>
         <div class="col-md-5 visual">
           <img src="image/top/eclair.png" alt="" class="img-fluid">
         </div>
         <div class="col-md-6 text">
-          <h2><img src="image/top/header-eclair.png" alt=""></h2>
+          <h3><img src="image/top/header-eclair.png" alt=""></h3>
           <h3>月夜のエクレール</h3>
           <p>
             米粉でシュー皮もクリームも仕上げたエクレア。
@@ -108,20 +121,21 @@
   <div class="item macalon padding15">
     <div class="container max1000">
       <div class="row">
-        <div class="col-md-5 visual d-md-none">
+        <div class="pc-bg d-none d-md-block">
+          <img class="img-fluid" src="image/top/macalon-bg.jpg" alt="">
+        </div>
+        <div class="col-md-5 visual">
           <img src="image/top/macaron.png" alt="" class="img-fluid">
         </div>
+        <div class="col-md-1 dummy d-none d-md-block"></div>
         <div class="col-md-6 text">
-          <h2><img src="image/top/header-macalon.png" alt=""></h2>
+          <h3><img src="image/top/header-macalon.png" alt=""></h3>
           <h3>月夜のマカロン</h3>
           <p>
             天然の素材でほんのりやさしく色づいた米粉のマカロン。
             頑張った今日のご褒美に、ゆっくりと体温で溶かしていくように味わいたい、癒しの一粒です。
           </p>
           <button class="float-right guide-button"><a href="#">商品一覧へ →</a></button>
-        </div>
-        <div class="col-md-5 visual d-none d-sm-block">
-          <img src="image/top/macaron.png" alt="" class="img-fluid">
         </div>
       </div>
     </div>
@@ -130,11 +144,14 @@
   <div class="item bread padding15">
     <div class="container max1000">
       <div class="row">
+        <div class="pc-bg d-none d-md-block">
+          <img class="img-fluid" src="image/top/bread-bg.jpg" alt="">
+        </div>
         <div class="col-md-5 visual">
           <img src="image/top/bread.png" alt="" class="img-fluid">
         </div>
-        <div class="col-md-6 text">
-          <h2><img src="image/top/header-bread.png" alt=""></h2>
+        <div class="col-md-6 text float-right">
+          <h3><img src="image/top/header-bread.png" alt=""></h3>
           <h3>全粒粉100%食パン</h3>
           <p>
             贅沢にじっくりと時間をかけた製法により、トーストしなくてもふんわりしっとり。
@@ -149,15 +166,14 @@
   <div class="item lunch padding15">
     <div class="container max1000">
       <div class="row">
-        <div class="col-md-5 visual">
+        <div class="visual">
           <img src="image/top/bacon-sp.png" alt="" class="img-fluid d-md-none">
           <img src="image/top/bacon-pc.png" alt="" class="img-fluid d-md-inline d-none">
         </div>
-        <div class="col-md-6 text">
-          <h2>
-            <img class="header" src="image/top/header-lunch.png" alt="">
-            <img src="image/top/circle.png" alt="" class="img-fluid circle">
-          </h2>
+        <div class="col-md-6 dummy d-none d-md-block"></div>
+        <div class="col-md-6 text float-right">
+          <img class="header" src="image/top/header-lunch.png" alt="">
+          <img src="image/top/circle.png" alt="" class="img-fluid circle">
           <p>
             地元素材を使用した、ちょっぴりおしゃれなランチメニューをご用意しました。
             お一人様でもグループでも、ほっこりやさしいランチタイムを彩ります。
@@ -261,10 +277,17 @@
   <p class="copyright">&copy; Patisserie Soraka. All rights reserved.</p>
 </footer>
 
+<!-- jquery -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 <!-- bootstrap 4 js -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="js/slick/slick.min.js"></script>
+<script src="js/top-slider.js"></script>
 
 <!-- original js -->
 <!-- <script src="js/nav.js"></script> -->

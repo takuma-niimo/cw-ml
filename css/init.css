@@ -48,9 +48,15 @@ article>*:last-child {
   margin-bottom: 0;
 }
 
+img.header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 img.header+.circle {
   display: block;
-  width: 10%;
+  width: 40px;
   margin: 30px auto 0;
 }
 
@@ -66,4 +72,8 @@ button.guide-button {
 .overwrap {
   position: relative;
   z-index: 1;
+}
+
+.overwrap+* {
+  margin-top: -18px;
 }
