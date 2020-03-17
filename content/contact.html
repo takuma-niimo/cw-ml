@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>soraka お問い合わせ</title>
+
+  <!-- bootstrap 4 css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- my style -->
+  <link rel="stylesheet" href="../css/init.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/shop-info.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="css/init.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<!-- hamburger menu -->
+<div id="navArea">
+  <input type="checkbox" id="navcheck">
+  <nav>
+    <!-- navigation drawer -->
+    <div class="inner">
+      <div class="shop-logo">
+        <a href="../"><img class="img-fluid" src="../image/soraka-img.png" alt=""></a>
+      </div>
+      <ul>
+        <li class="level1"><a href="concept.html">sorakaのこと</a></li>
+        <li class="level1"><a href="product.html">商品紹介</a></li>
+        <li class="level2"><a href="product.html#you">洋生菓子</a></li>
+        <li class="level2"><a href="product.html#yaki">焼生菓子</a></li>
+        <li class="level2"><a href="product.html#bread">パン</a></li>
+        <li class="level2"><a href="product.html#other">その他</a></li>
+        <li class="level1"><a href="lunch.html">ランチメニュー</a></li>
+        <li class="level1"><a href="about.html">会社情報</a></li>
+        <li class="level1"><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <label for="navcheck" class="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </nav>
+</div>
+
+<header>
+  <h1 class="keyvisual">
+    <img src="img/contact/keyvisual.jpg" alt="">
+  </h1>
+</header>
+
+<!-- main contents -->
+<article>
+
+<h2 class="img-header overwrap">
+  <img class="img-fluid header" src="img/contact/header-contact.png" alt="">
+  <img class="img-fluid circle" src="../image/top/circle.png" alt="">
+</h2>
+
+<div class="formarea">
+
+  <div class="balloon">
+    <div class="title">
+      <h2>お電話・FAXによるお問い合わせ</h2>
+    </div>
+  </div>
+
+  <div class="tel">
+    <div>
+      <h3><a href="tel:XXXX-XX-XXXX"><strong>TEL :</strong> XXXX-XX-XXXX</a></h3>
+      <h3><strong>FAX :</strong> XXXX-XX-XXXX</h3>
+    </div>
+    <div>
+      <small>【受付時間】平日9:00～17:00
+      &nbsp;※日曜・祝日、年末年始などは休みをいただいております。</small>
+    </div>
+  </div>
+
+  <form action="php/mailform.php" method="post" id="mail_form">
+    <div class="container">
+      <dl class="row">
+        <dt class="col-md-4 required">お名前</dt>
+        <dd class="required col-md-8">
+          <input type="text" id="name_1" name="name_1" placeholder="姓"><input type="text" id="name_2" name="name_2" placeholder="名">
+        </dd>
+
+        <dt class="col-md-4 required">ふりがな</dt>
+        <dd class="required col-md-8">
+          <input type="text" id="read_1" name="read_1"><input type="text" id="read_2" name="read_2">
+        </dd>
+
+        <dt class="col-md-4 required">メールアドレス</dt>
+        <dd class="required col-md-8">
+          <input type="email" id="mail_address" name="mail_address" placeholder="your-address@example.com">
+        </dd>
+
+        <dt class="col-md-4">メールアドレス(確認用)</dt>
+        <dd class="col-md-8">
+          <input type="email" id="mail_address_confirm" name="mail_address_confirm" placeholder="your-address@example.com">
+        </dd>
+
+        <dt class="col-md-4">タイトル</dt>
+        <dd class="col-md-8">
+          <input type="text" id="mail_title" name="title">
+        </dd>
+
+        <dt class="col-md-4">お問い合わせの内容</dt>
+        <dd class="col-md-8">
+          <textarea id="mail_contents" name="mail_contents" cols="40" rows="5"></textarea>
+        </dd>
+
+        <p id="form_submit">
+          <input type="button" id="form_submit_button" value="送信">
+        </p>
+      </dl>
+    </div>
+  </form>
+
+</div>
+
+</article>
+
+<footer>
+  <p class="copyright">&copy; Patisserie Soraka. All rights reserved.</p>
+</footer>
+
+<!-- bootstrap 4 js -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- original js -->
+<!-- <script src="js/nav.js"></script> -->
+</body>
+</html>

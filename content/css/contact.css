@@ -1,0 +1,171 @@
+.formarea {
+  background-color: #f8f8f8;
+  padding-top: 60px;
+  margin-bottom: 0;
+}
+
+.formarea>* {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.balloon {
+  text-align: center;
+}
+
+.balloon h2 {
+  font-size: 26px;
+}
+
+.tel {
+  font-family: arial, sans-serif;
+  text-align: center;
+}
+
+.tel h3 {
+  display: inline-block;
+  margin: 45px 1em;
+  font-size: 24px;
+  color: black;
+}
+
+/* ---------------------------
+mail form
+--------------------------- */
+form#mail_form {
+  max-width: 700px;
+  margin: 60px auto 0;
+  font-family: arial, sans-serif;
+}
+
+dd.required {
+  position: relative;
+}
+
+dd.required::before {
+  position: absolute;
+  display: block;
+  content: "必須";
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  background-color: #d4514d;
+  width: 40px;
+  top: 4px;
+  left: -50px;
+  font-family: YuMincho, 'Yu Mincho', serif;
+}
+
+form dl {
+  margin-bottom: 0;
+}
+
+form dt {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  line-height: 24px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+form input {
+  line-height: 30px;
+  padding-left: 3px;
+  color: #444444;
+}
+
+form input[type="email"],
+form textarea,
+form input[type="text"] {
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  border: 1px solid #cacaca;
+}
+
+#mail_address, #mail_address_confirm {
+  ime-mode: inactive;
+}
+
+#name_1, #read_1 {
+  margin-right: 5px;
+  width: calc((100% - 5px) / 2);
+}
+
+#name_2, #read_2 {
+  width: calc((100% - 5px) / 2);
+}
+
+#mail_address,
+#mail_address_confirm,
+#mail_title {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+#form_submit {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#form_submit_button {
+  border: 1px solid #6fa4c4;
+  border-radius: 3px;
+  background-color: #7cadc9;
+  color: white;
+  line-height: 30px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+/* ---------------------------
+footer
+--------------------------- */
+footer .copyright {
+  margin-top: 0;
+}
+
+/* ---------------------------
+for mobile
+--------------------------- */
+@media (max-width: 767px) {
+
+.balloon h2 {
+  font-size: 20px;
+}
+
+.tel h3 {
+  display: block;
+  margin: 30px 1em;
+  font-size: 20px;
+}
+
+.tel small {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form dt {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+form dt.required {
+  padding-left: 60px;
+}
+
+dd.required::before {
+  left: 15px;
+  top: -30px;
+}
+
+}

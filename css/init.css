@@ -70,6 +70,10 @@ button.guide-button {
   z-index: 1;
 }
 
+.img-header.overwrap {
+  margin-bottom: 0;
+}
+
 .overwrap+* {
   margin-top: -18px;
 }

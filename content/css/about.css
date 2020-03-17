@@ -1,0 +1,19 @@
+.about .detail {
+  background-color: #f8f8f8;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about .detail hr,
+.about .detail .inner {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------------------------
+footer
+--------------------------- */
+footer .copyright {
+  margin-top: 0;
+}
