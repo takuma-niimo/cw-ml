@@ -26,3 +26,9 @@ img.header+.circle {
   margin-right: auto;
   display: block;
 }
+
+p {
+  line-height: 200%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
