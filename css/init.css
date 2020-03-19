@@ -13,13 +13,16 @@ ul {
 
 a {
   color: inherit;
-}
-
-p {
+  transition: all .5s;
 }
 
 a:hover {
   text-decoration: none;
+  opacity: .5;
+  color: inherit;
+}
+
+p {
 }
 
 article>* {
