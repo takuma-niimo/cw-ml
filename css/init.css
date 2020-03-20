@@ -25,6 +25,14 @@ a:hover {
 p {
 }
 
+.radius {
+  border-radius: 16px;
+}
+
+.radius-circle {
+  border-radius: 50%;
+}
+
 article>* {
   margin-top: 60px;
   margin-bottom: 60px;
