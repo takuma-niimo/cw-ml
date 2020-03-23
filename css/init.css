@@ -3,6 +3,7 @@ body {
 	'Yu Mincho', /* Windows用 */
 	serif;
   color: #444444;
+  overflow-x: hidden;
 }
 
 ul {
@@ -87,4 +88,17 @@ button.guide-button {
 
 .overwrap+* {
   margin-top: -18px;
+}
+
+header {
+  position: relative;
+}
+
+header .shop-logo {
+  position: absolute;
+  width: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
 }

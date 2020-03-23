@@ -156,7 +156,7 @@ for mobile
 
 form dt {
   margin-top: 25px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 form dt.required {
@@ -165,7 +165,7 @@ form dt.required {
 
 dd.required::before {
   left: 15px;
-  top: -30px;
+  top: -40px;
 }
 
 }

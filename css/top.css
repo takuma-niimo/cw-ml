@@ -83,6 +83,7 @@ line up
   background-image: url(../image/top/cloth.jpg);
   padding-left: 0;  /* lunch; exceptional layout */
   padding-right: 0; /* lunch; exceptional layout */
+  margin-top: -48px;
 }
 
 .lineup .img-header+.item {
@@ -138,6 +139,7 @@ line up
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
 }
 
 .item.lunch img.header+.circle {
@@ -219,6 +221,20 @@ line up
 
   .lineup .item:nth-child(odd) .text::after {
     background-color: white;
+    width: 50vw;
+    left: 100%;
+  }
+
+  .lineup .item:nth-child(even) .text::after {
+    position: absolute;
+    background-color: white;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 50vw;
+    top: 0;
+    bottom: 0;
+    right: 100%;
   }
 
   .lineup .lunch {

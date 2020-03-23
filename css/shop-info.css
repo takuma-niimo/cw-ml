@@ -3,6 +3,12 @@ shop-info
 --------------------------- */
 .shop-info {
   margin-bottom: 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .shop-info {
+    text-align: inherit;
+  }
 }
 
 .shop-info .looks {
