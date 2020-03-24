@@ -55,7 +55,7 @@ dd.required::before {
   color: white;
   background-color: #d4514d;
   width: 40px;
-  top: 4px;
+  top: 12px;
   left: -50px;
   font-family: YuMincho, 'Yu Mincho', serif;
 }
@@ -65,11 +65,17 @@ form dl {
 }
 
 form dt {
-  margin-top: 5px;
-  margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   line-height: 24px;
   font-weight: normal;
   font-size: 14px;
+}
+
+form dd {
+  margin-bottom: 0;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
 form input {
@@ -155,8 +161,7 @@ for mobile
 }
 
 form dt {
-  margin-top: 25px;
-  margin-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 form dt.required {
@@ -165,7 +170,7 @@ form dt.required {
 
 dd.required::before {
   left: 15px;
-  top: -40px;
+  top: -30px;
 }
 
 }
